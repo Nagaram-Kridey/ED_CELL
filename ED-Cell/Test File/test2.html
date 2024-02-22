@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changing Image and Text</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .motive {
+    display: flex;
+    background-image: url("motive.png");
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+  #imagemotive {
+    z-index: 1;
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+  }
+  #imagemotive img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  #textmotive {
+    flex: 1;
+    margin-left: 20px;
+  }
+  #textmotive p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .buttonmotive {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="motive">
+    
+  <div id="imagemotive">
+    <img src="microsoft.png" alt="Image" id="imageDisplay">
+  </div>
+  <div id="textmotive">
+    <p id="textContent">Default Text</p>
+  </div>
+</div>
+
+<div class="buttonmotive">
+  <button onclick="prevContent()"><</button>
+  <button onclick="nextContent()">></button>
+</div>
+
+</body>
+</html>

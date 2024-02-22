@@ -1,0 +1,598 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    color: #fff;
+    font-size: 16px;
+}
+#header{
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#header .container{
+  z-index: -2;
+    height: 69%;
+    padding: 30px 10%;
+    background: radial-gradient(circle at 80% , #410085,#140152);
+}
+#ani-head{
+   
+    position: absolute;
+    top: 78px;
+    right: 80px;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+  
+    width: 140px;
+}
+.logo2{
+    width: 140px;
+    position: absolute;
+    left: 17.5%;
+}
+nav ul li{
+  
+    display: inline-block;
+    list-style: none;
+    margin: 1px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+  
+    border-radius: 50%;
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+}
+.header-text h1{
+    font-family: "Lato", sans-serif;
+    font-size: 70px;
+    margin-top: 10px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+nav .fas{
+    display: none;
+}
+.index-about{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.index-about h1{
+    color: black;
+    font-size: 70px;
+    font-family:  "Calibri";
+    letter-spacing: 0.1em;
+    
+    font-style: Bold;
+    font-weight: 600;
+}
+.index-about h1 span{
+    color: transparent;
+    -webkit-text-stroke: 2px #0084ff;
+    
+    
+}
+h2{
+  color: #000;
+}
+
+#ani-think{
+    z-index: 1;
+    position: absolute;
+    top: 880px;
+    right: -10px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.index-about img{
+    z-index: -2;
+    position: relative;
+}
+
+ .spotlight h2{
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 180px;
+    color: black;
+}
+.slideshow-container {
+    width: 900px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    overflow: hidden;
+    max-width: 800px;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    margin-left: 10px;
+    margin-top: 400px;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Position the 'prev' button to the left */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the 'next' button to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+    /* Announcements container */
+.announcements-container {
+    position: absolute;
+    top: 1915px;
+    
+    left: 50%;
+    
+    max-width: 600px;
+    background-color: #E4F2FF;
+    margin: 20px auto;
+    margin-left: 200px;
+    padding: 20px;
+    
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Announcement item */
+  .announcement {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+  }
+  .announcement:hover{
+   
+    transition: 0.3s ease-in-out;
+    background-color: #7e40e2;
+    border-radius: 20px;
+}
+.announcement:hover p{
+   
+    transition: 0.3s ease-in-out;
+    color: #ffffff;
+    
+}
+.announcement:hover a{
+   
+    transition: 0.3s ease-in-out;
+    color: #ffffff;
+    
+}
+.announcement:hover .date-box{
+   
+    transition: 0.3s ease-in-out;
+    color: #ffffff;
+    
+}
+
+
+  
+  /* Date box */
+  .date-box {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(78, 59, 161, 0);
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3a77b1;
+  }
+  
+  /* Announcement text */
+  .announcement-text {
+    background-color: rgba(38, 26, 92, 0);
+    padding: 10px;
+    margin-left: 100px; /* Adjust as needed based on date box width */
+    transition: color 0.3s ease-in-out; /* Transition for color change */
+    color: rgb(38, 26, 92);
+    
+  }
+  
+  /* Hover effect for text */
+  
+  /* "Click here" link */
+  .announcement-link {
+    color: rgb(119, 0, 255);
+    text-decoration: none;
+  }
+
+  .announcement-link span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: rgb(0, 17, 255);
+    text-decoration: none;
+    text-shadow: 5px 2px 10px rgb(76, 0, 255);
+  }
+  
+  /* Card */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .back {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+  
+  .front-content,
+  .back-content {
+    padding: 20px;
+    text-align: center;
+  }
+  .date-box span{
+    font-size: 30px;
+  }
+
+  .motive {
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    top: 2700px;
+    background-image: url("motive.png");
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  #imagemotive {
+    z-index: 1;
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+  }
+  #imagemotive img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  #textmotive {
+    flex: 1;
+    margin-left: 20px;
+  }
+  #textmotive p {
+    color: #4d4a4a;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .buttonmotive {
+    
+    position: absolute;
+    left: 50%;
+    top: 3200px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+@media only screen and (max-width: 1535px){
+    #header{
+        background-image: url(phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .logo2{
+        width: 140px;
+        position: inherit;
+        
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+   
+}
+@media screen and (min-resolution: 120dpi) {
+  body {
+      font-size: 20px; /* Adjust font size for 125% scale */
+  }
+
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#header .container{
+  z-index: -2;
+  height: 69%;
+  padding: 30px 10%;
+  background: radial-gradient(circle at 80%, #410085, #140152);
+}
+
+#ani-head{
+  position: absolute;
+  top: 78px;
+  right: 80px;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+.logo2{
+  width: 140px;
+  position: absolute;
+  left: 17.5%;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 1px 20px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.header-text{
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.header-text h1{
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  margin-top: 10px;
+}
+
+.header-text h1 span{
+  color: #ff004f;
+}
+
+nav .fas{
+  display: none;
+}
+
+.index-about{
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.index-about h1{
+  color: black;
+  font-size: 70px;
+  font-family: "Calibri";
+  letter-spacing: 0.1em;
+  font-style: Bold;
+  font-weight: 600;
+}
+
+.index-about h1 span{
+  color: transparent;
+  -webkit-text-stroke: 2px #0084ff;
+}
+
+#ani-think{
+  z-index: 1;
+  position: absolute;
+  top: 800px;
+  right: -10px;
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.index-about img{
+  z-index: -2;
+  position: relative;
+}
+
+.spotlight h2{
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-left: 180px;
+  color: black;
+}
+
+.slideshow-container {
+  width: 900px; /* Adjust the width as needed */
+  height: 700px; /* Adjust the height as needed */
+  overflow: hidden;
+  max-width: 800px;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  margin-left: 10px;
+  margin-top: 400px;
+}
+}

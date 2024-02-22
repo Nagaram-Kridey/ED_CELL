@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="toplogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e3110e82cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+
+<body>
+    <div class="pointer">
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="EDlogo.png" alt="logo" class="logo"> 
+               <img src="KLlogo.png" alt="logo" class="logo2"> 
+               <ul  id="sidemenu" >
+                  <li> <a href="#header ">Home</a></li>
+                  <li> <a href="#about">About</a></li>
+                  <li> <a href="#services">Startups</a></li>
+                  <li> <a href="#portfolio">News & Events</a></li>
+                  <i class="fas fa-times"   onclick="hidemenu()" ></i>
+               </ul>
+               <i class="fas fa-bars" onclick="showmenu()" ></i>
+            </nav>
+            <div class="head-lot" id="ani-head">
+              <script>
+               var animation = bodymovin.loadAnimation({
+                 container: document.getElementById('ani-head'),
+                 renderer: 'svg',
+                 loop: true,
+                 autoplay: true,
+                 name:'head anime',
+                 path: 'Animation - 1708455107046.json'
+               });
+              </script>
+            </div>
+            <div class="header-text">
+                 
+                 <h1>You <span>Create</span>,<br>We <span>Support</span></h1>
+                 
+                 <p>We ,will assist you in every step on your  journey of becoming an <br> entrepreneur.</p>
+                 
+            </div>
+        </div>
+        <div class="index-about">
+            <h1>Welcome to the <span>ED Cell</span></h1>
+            <div class="abt-cont">
+                <div class="think-lot" id="ani-think">
+                    <script>
+                     var animation = bodymovin.loadAnimation({
+                       container: document.getElementById('ani-think'),
+                       renderer: 'svg',
+                       loop: true,
+                       autoplay: true,
+                       name:'think anime',
+                       path: 'Animation - 1708458402164.json'
+                     });
+                    </script>
+                  </div>
+                  <img src="about1.png" alt="about1" class="about1">
+            </div>
+        </div>
+        <div class="spotlight">
+            <h2>In The Spotlight </h2>
+            <div class="slideshow-container">
+                <!-- Images -->
+                <div class="mySlides fade">
+                    <img src="slide1.png" alt="Slide 1" style="width: 110% ; height: 100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="slide2-2.png" alt="Slide 2" style="width: 100% ; height: 100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="slide3.png" alt="Slide 3"  style="width: 130% ; height: 100%">
+                  </div>
+              
+                <!-- Previous & Next buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              </div>
+              <div class="announcements-container">
+                <h2>Announcements</h2>
+                <!-- Announcement 1 -->
+                <div class="announcement">
+                  <div class="date-box">Feb <span>22</span></div>
+                  <div class="announcement-text">
+                    <p>webinar to understand the clinician's perspective on the role of food and nutrition in addressing lifestyle disorders.<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="#" class="announcement-link">Click here</a></p>
+                  </div>
+                </div>
+              
+                <!-- Announcement 2 -->
+                <div class="announcement">
+                  <div class="date-box">Feb <span>22</span></div>
+                  <div class="announcement-text">
+                    <p>For startups working in livelihood space. Funding support upto $50000<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="#" class="announcement-link">Click here</a></p>
+                  </div>
+                </div>
+              
+                <!-- Announcement 3 -->
+                <div class="announcement">
+                  <div class="date-box">Feb <span>22</span></div>
+                  <div class="announcement-text">
+                    <p>Register now for the Startup Expo 2022 on our KLH campus, welcoming all registered startups/startups with patented technology <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="#" class="announcement-link">Click here</a></p>
+                  </div>
+                </div>
+                <a href="#" class="announcement-link"><span>More</span></a>
+
+        </div>
+        <div class="motive">
+    
+            <div id="imagemotive">
+              <img src="microsoft.png" alt="Image" id="imageDisplay">
+            </div>
+            <div id="textmotive">
+              <p id="textContent">Default Text</p>
+            </div>
+          </div>
+          
+          <div class="buttonmotive">
+            <button onclick="prevContent()"><</button>
+            <button onclick="nextContent()">></button>
+          </div>
+ 
+          
+        
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function showmenu(){
+            sidemenu.style.right = "0";
+        }
+        function hidemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        </script>
+        <script>
+            const imageData = [
+              { src: "microsoft.png", width: "45%" },
+              { src: "apple.png", width: "60%" }
+            ]; 
+          
+            const texts = [
+              "As we look ahead into the next century, leaders will be those who empower others. <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  - Bill Gates <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp CEO Microsoft" , // Text with HTML line break
+              "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with <br>improving your other innovations.<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp - Steve Jobs<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCEO Apple", // Text on separate lines
+            ];
+          
+            let currentIndex = 0;
+          
+            function updateContent() {
+              const { src, width } = imageData[currentIndex];
+              document.getElementById('imageDisplay').src = src;
+              document.getElementById('imageDisplay').style.width = width;
+              document.getElementById('textContent').innerHTML = texts[currentIndex]; // Use innerHTML to render HTML
+            }
+          
+            function nextContent() {
+              currentIndex = (currentIndex + 1) % imageData.length;
+              updateContent();
+            }
+          
+            function prevContent() {
+              currentIndex = (currentIndex - 1 + imageData.length) % imageData.length;
+              updateContent();
+            }
+          
+            // Initial content update
+            updateContent();
+          </script>
